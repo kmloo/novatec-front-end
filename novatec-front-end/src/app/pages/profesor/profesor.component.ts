@@ -56,6 +56,7 @@ export class ProfesorComponent implements OnInit {
         this.profesores = data;
         this.dataSource = this.profesores;
       } else {
+        this.dataSource = this.profesores;
         this.snackBar.openWarningSnackBar('No se encontraron profesores.');
       }
     }, (err) => {

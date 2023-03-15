@@ -18,20 +18,14 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { DialogAlumnoComponent } from './dialog/dialog-alumno/dialog-alumno.component';
 import { DialogProfesorComponent } from './dialog/dialog-profesor/dialog-profesor.component';
-import { AlumnoComponent } from './pages/alumno/alumno.component';
-import { HomeComponent } from './pages/home/home.component';
 import { ProfesorComponent } from './pages/profesor/profesor.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AlumnoComponent,
     ProfesorComponent,
-    HomeComponent,
-    DialogProfesorComponent,
-    DialogAlumnoComponent,
+    DialogProfesorComponent
 
   ],
   imports: [
@@ -71,8 +65,7 @@ import { ProfesorComponent } from './pages/profesor/profesor.component';
     MatFormFieldModule
   ],
   providers: [
-    DialogAlumnoComponent,
-    DialogAlumnoComponent
+    DialogProfesorComponent
   ],
   bootstrap: [AppComponent]
 })
